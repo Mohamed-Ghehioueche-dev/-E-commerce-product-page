@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Css -->
+   <link rel="stylesheet" href="style.css">
+  <!-- Javascript -->
+   <script src="script.js" defer></script>
+  <!-- Icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+  <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Title -->
+    <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- mobile navbar -->
+      <div class="mobile">
+        <ul class="nav-list-mobile">
+            <img src="images/icon-close.svg" alt="" class="close">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="overly"></div>
+      <!-- disktop navbar -->
+      <div class="nav-contains">
+        <img src="images/icon-menu.svg" alt="" class="openMenu">
+        <img src="images/logo.svg" alt="logo">
+        <ul class="nav-list">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="shop">
+        <a href="#"><img src="images/icon-cart.svg" alt="icon-cart" class="icon-cart"></a>
+        <div class="notif">0</div>
+        <a href="#"><img src="images/image-avatar.png" alt="avatar" class="avatar"></a>
+        <div class="cart">
+          <h3>Cart</h3>
+          <p class="des"></p>
+          
+          <div class="fillContain">
+          <div class="cartFill">
+    
+            <div class="cartFillContain">
+
+            </div>
+          </div>
+          <button type="submit" class="checkout-btn">Checkout</button>
+          </div>
+          
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+    <div class="container">
+    <!-- start product-->
+      <div class="product">
+        <div class="product-gallury">
+          <div class="main-product">
+            <i class="fa-solid fa-chevron-left" id="previous"></i>
+            <img src="images/image-product-1.jpg" alt="" class="main-image">
+            <i class="fa-solid fa-chevron-right" id="next"></i>
+          
+          </div>
+
+          <div class="preview">
+            <img src="images/image-product-1.jpg" alt="" class="imgproduc">
+            <img src="images/image-product-2.jpg" alt="" class="imgproduc">
+            <img src="images/image-product-3.jpg" alt="" class="imgproduc">
+            <img src="images/image-product-4.jpg" alt="" class="imgproduc">
+          </div>
+        </div>
+  
+        <div class="product-content">
+          <span class="storName">Sneaker Company</span>
+          <h1 class="productName">Fall Limited Edition Sneakers</h1>
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+    durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          <div class="pricing">
+            <div class="lastPrix">
+              <h2 class="prix">$125.00</h2>
+              <p>50%</p>
+            </div>
+            <span class="discount">$250.00</span>
+          </div>  
+        
+          <div class="buttons">
+            <div class="quantity">
+              <i class="fa-solid fa-minus" id="minusIcon"></i>
+              <span id="resualt">1</span>
+              <i class="fa-solid fa-plus" id="plusIcon"></i>
+            </div>
+            
+            <button type="button" class="add"><img src="images/icon-cart.svg" alt="" class="icon-cart-btn">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    <!-- end  product--> 
+      <!-- lightbox  start --> 
+        <div class="lightbox hidde">
+          <span class="material-symbols-outlined" id="close">close</span>
+          <div class="thumbnails">
+            <div class="thumbnail">
+              <i class="fa-solid fa-chevron-left" id="previous"></i>
+              <img src="images/image-product-1.jpg" alt="" class="lightboxImage">
+              <i class="fa-solid fa-chevron-right" id="next"></i>
+            </div>
+            <div class="preview Lightbox">
+            <img src="images/image-product-1.jpg" alt="" class="imgproduc">
+            <img src="images/image-product-2.jpg" alt="" class="imgproduc">
+            <img src="images/image-product-3.jpg" alt="" class="imgproduc">
+            <img src="images/image-product-4.jpg" alt="" class="imgproduc">
+          </div>
+          </div>
+          
+        </div>
+      <!-- lightbox  end -->   
+      </div>  
+    </div>
+
+</body>
+</html>
